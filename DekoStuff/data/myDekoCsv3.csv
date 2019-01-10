@@ -1,0 +1,99 @@
+Owned;Jewel Name;Skill;Skill Description;Juwel;Fähigkeit;Max;Level;Rarity;Weight;Mysterious;Glowing;Worn;Warped;T1;T2;T3
+0;Charger Jewel;Focus;Increases the fill rate for weapons with gauges and the charge rate for weapons with charge attacks;;Fokus;3;2;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Draw Jewel;Critical Draw;Increases affinity when performing draw attacks;Ziehen;Kritisches Ziehen;3;2;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Fungiform Jewel;Mushroomancer;Lets you digest mushrooms that would otherwise be inedible and gain their advantageous effects;;;3;1;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Handicraft Jewel;Handicraft;Extends the weapon sharpness gauge. However. it will not increase the gauge past its maximum;Handwerk;Handwerk;5;3;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Mind's Eye Jewel;Mind's Eye/Ballistics;Prevents attacks from being deflected and shortens the distance before ammo and arrows reach maximum power;;;1;2;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Pierce Jewel;Piercing Shots;Increases the attack power of piercing ammo and Dragon Piercer;;;1;3;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Release Jewel;Free Elem/Ammo Up;Unlocks your weapon's hidden element. Also increases bowgun loading capacity;;;3;3;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Sprinter Jewel;Marathon Runner;Slows down stamina depletion for actions which continuously drain stamina;;;3;2;8;1;0;0;0.000909091;0.002272727;0.00025;0.000909091;0.000931818
+0;Artillery Jewel;Artillery;Strengthens explosive attacks. such as gunlance shells. Wyverns Fire. and sticky ammo;Artillerie;Artillerie;3;1;8;3;0;0;0.002727273;0.006818182;0.00075;0.002727273;0.002795455
+0;Mighty Bow Jewel;Bow Charge Plus;Increases max bow charge level by 1;Mächtiger-Bogen;Sehnenkraftä;1;2;8;3;0;0;0.002727273;0.006818182;0.00075;0.002727273;0.002795455
+0;Spread Jewel;Spread/Power Shots;Increases the attack power of spread ammo and power shot arrows;Schrot;;1;3;8;3;0;0;0.002727273;0.006818182;0.00075;0.002727273;0.002795455
+0;Critical Jewel;Critical Boost;Increases the damage of critical hits;Kritisches;Kritischer Boost;3;2;8;5;0;0;0.004545455;0.011363636;0.00125;0.004545455;0.004659091
+0;Attack Jewel;Attack Boost;Increases attack power and improves affinity at higher levels;Angriff;Angriffsboost;7;1;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Challenger Jewel;Agitator;Increases attack power and affinity when large monsters become enraged;;;5;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Forceshot Jewel;Normal Shots;Increases the attack power of normal ammo and normal arrows;;;1;3;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Furor Jewel;Resentment;Increases attack when you have recoverable damage;;;5;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Ironwall Jewel;Guard;Reduces knockbacks and stamina depletion when guarding;Eisenmauer;Blocken;5;1;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Magazine Jewel;Capacity Boost;Increases the gunlance's shell capacity and charge blade's phial capacity;;;1;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Refresh Jewel;Stamina Surge;Speeds up stamina recovery;;;3;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Shield Jewel;Guard Up;Allows you to guard against ordinarily unblockable attacks;;;1;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Trueshot Jewel;Special Ammo Boost;Increases the power of bowgun special ammo and Dragon Piercer;;;2;1;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+0;Blast Jewel;Blast Attack;Increases the rate of blast buildup;Explosion;Explosionsangriff;3;1;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Dragonseal Jewel;Elderseal Boost;Increases the Elderseal of weapons and dragon ammo;Drachensiegel;;1;3;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Enhancer Jewel;Power Prolonger;Allows long swords. dual blades. insect glaives. switch axes. and charge blades to stay powered up longer;Dauer;Objektverlängerung;3;2;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Mighty Jewel;Maximum Might;Increases affinity when stamina is full;;;3;2;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Paracoat Jewel;Paralysis Functionality;Allows you to apply paralysis coating;Lähmbeschichtung;Lähmbeschichtung;1;3;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Paralyzer Jewel;Paralysis Attack;Increases the duration of paralysis;Lähmangriff;Lähmangriff;3;1;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Sharp Jewel;Protective Polish;Makes weapons sharpness not decrease for a set time after sharpening;Scharfes;;1;2;7;3;0;0.0005;0.003;0.009;0.001025;0.00356;0.00327
+0;Blastcoat Jewel;Blast Functionality;Allows you to apply blast coating;Sprengbeschichtung;Explosionsbeschichtung;1;3;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Flawless Jewel;Peak Performance;Increases attack when your health is full;Makellos;Hächstleistung;3;2;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Potential Jewel;Heroics;Increases the attack power and defense when health drops to 35% or lower;Potenzial;Heldentat;5;2;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Sleep Jewel;Sleep Attack;Increases the rate of sleep buildup;Schlaf;Schlafangriff;3;1;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Sleepcoat Jewel;Sleep Functionality;Allows you to apply sleep coating;Schlafbeschichtung;;1;3;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Throttle Jewel;Latent Power;Temporarily increases affinity and reduces stamina depletion when you take 180 damage or fight > 5 min;;;5;2;7;5;0;0.000833333;0.005;0.015;0.001708333;0.005933333;0.00545
+0;Destroyer Jewel;Partbreaker;Makes it easier to break or sever parts of large monsters;Zerstärer;Teilezerstärer;3;2;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Evasion Jewel;Evade Window;Extends the invulnerability period when evading;Ausweich;Unverwundbarkeit;5;2;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Expert Jewel;Critical Eye;Boosts affinity;Experten;Kritischer Blick;7;1;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Jumping Jewel;Evade Extender;Increases evade distance;Sprung;Ausweichdistanz;3;2;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Physique Jewel;Constitution;Decreases stamina loss when performing moves such as evading. attacking. running. etc;Figur;Konstitution;5;2;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Recovery Jewel;Recovery Speed;Speeds recovery from temporary damage;Erholung;Erholungsgeschwindigkeit;3;1;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Sheath Jewel;Quick Sheath;Increases the speed of sheathing;;;3;1;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Sonorous Jewel;Horn Maestro;Increases the effect duration of hunting horn melodies;Klang;Horn-Maestro;1;1;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Tenderizer Jewel;Weakness Exploit;Increases the affinity of attack that exploit a monster weak spot;Aufweich;Schwächevorteil;3;2;6;1;0.001428571;0.003238095;0.007809524;0.007333333;0.003133333;0.005740952;0.00642
+0;Blaze Jewel;Fire Attack;Increases fire element attack power;Bomber;Feuerangriff;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Bolt Jewel;Thunder Attack;Increases thunder element attack power;Blitz;Donnerangriff;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Bomber Jewel;Bombardier;Increases the damage of explosive items;Bomber;Bombardier;3;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Defense Jewel;Defense Boost;Increases defense. Level up to improve resistances as well;Verteidigung;Verteidigungsboost;7;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Dragon Jewel;Dragon Attack;Increases dragon element attack power;Drachen;Drachenangriff;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Drain Jewel;Stamina Thief;Increases certain attacks ability to exhaust monsters;Entzug;Ausdauerdieb;3;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Earplug Jewel;Earplugs;Decreases negative effect of large monster's roars;Ohrstäpsel;Ohrstäpsel;5;3;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Elementless Jewel;Non-Elemental Boost;Powers up non-elemental weapons you have equipped;Elementloses;Nicht-Element-Boost;1;2;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Friendship Jewel;Wide-Range;Allows the effects of certain items to also affect nearby allies;Freundschaft;Wirkbereich;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Frost Jewel;Ice Attack;Increases ice element attack power;Frost;Eisangriff;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Grinder Jewel;Speed Sharpening;Speeds up weapon sharpening when you use a Whetstone;Schleif;Schnelles Schärfen;3;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;KO Jewel;Slugger;Makes it easier to dizzy monsters;Knock-Out;Lähmer;3;2;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Medicine Jewel;Recovery Up;Increases the amount recovered when restoring health;Medizin;Erholung hoch;3;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Slider Jewel;Affinity Sliding;Sliding boosts your affinity for a short time;Gleiter;Affinitätsschlittern;1;2;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Stonethrower Jewel;Slinger Capacity;Increases the loading capacity for slinger ammo obtained in the field;Steinwerfer;;3;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Stream Jewel;Water Attack;Increases water element attack power;Fluss;Wasserangriff;5;1;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Wind Resist Jewel;Windproof;Grants protection against wind pressure;Windresitenz;Windsicher;5;2;6;3;0.004285714;0.009714286;0.023428571;0.022;0.0094;0.017222857;0.01926
+0;Brace Jewel;Flinch Free;Prevents knockbacks and other reactions to small damage;Wappnung;Unbeeindruckt;3;3;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Enduring Jewel;Item Prolonger;Extends the duration of some item effects;;;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Footing Jewel;Tremor Resistance;Grants protection against ground tremors;Halt;Erschätterungswidst;3;2;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Gobbler Jewel;Speed Eating;Increases meat-eating and item-consumption speed;Verschling;Schnellessen;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Poisoncoat Jewel;Poison Functionality;Allows you to apply poison coating;Giftbeschichtung;Giftbeschichtung;1;3;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Resistor Jewel;Blight Resistance;Grants protection against all elemental blights;Resistor;Pestresistenz;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Steadfast Jewel;Stun Resistance;Reduces stun duration;Felsenfest;Betäubungswiderstand;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Venom Jewel;Poison Attack;Increases the rate of poison build-up;Gift;Giftangriff;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Vitality Jewel;Health Boost;Increases health;Lebenskraft;Gesundheitsboost;3;1;6;5;0.007142857;0.016190476;0.039047619;0.036666667;0.015666667;0.028704762;0.0321
+0;Hungerless Jewel;Hunger Resistance;Reduces maximum stamina depletion over time;Hungerfrei;Hungerwiderstand;3;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Intimidator Jewel;Intimidator;Reduces the chances small monsters will attack after spotting you;;;3;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Maintenance Jewel;Tool Specialist;Reduces the recharge time for specialized tools;Wartungs;Werkzeugspezialist;3;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Mirewalker Jewel;Aquatic Expert;Improves mobility in water;Sumpfläufer;Gewässerexperte;3;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Protection Jewel;Divine Blessing;Has a predetermined chance of reducing the damage you take;Schutz;Gättlicher Segen;3;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Satiated Jewel;Free Meal;Gives you a predetermined chance of consuming a food or drink item for free;Sattes;;1;1;5;1;0.009139785;0.006989247;0.001075269;0;0.006935484;0.002752688;0.000752688
+0;Antiblast Jewel;Blast Resistance;Grants protection against blastblight;Anti-Explosion;Explosionswiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Botany Jewel;Botanist;Increases the quantity of herbs and other consumable items you gather;Botanik;Botaniker;4;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Dragon Res Jewel;Dragon Resistance;Increases dragon resistance. Also improves defense at higher levels;Drachenabwehr;Drachenwiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Fire Res Jewel;Fire Resistance;Increases fire resistance. Also improves defense at higher levels;Feuerabwehr;Feuerwiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Geology Jewel;Geologist;Increases the number of times you can use a gathering point;Geologie;Geologe;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Heavy Artillery Jewel;Heavy Artillery;Increases the firepower of ballistae and cannons;Schwere-Artillerie;;2;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Ice Res Jewel;Ice Resistance;Increases ice resistance. Also improves defense at higher levels;Eisabwehr;Eiswiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Miasma Jewel;Effluvia Resistance;Gain a resistance to effluvial buildup;Miasma;Miasma-Widerstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Scent Jewel;Scenthound;Increases your scoutflies gauge fill rate when you find tracks and other traces left by monsters;Geruchs;Spährhund;1;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Smoke Jewel;Sporepuff Expert;Recover health when using sporepuffs;Rauch;Sporenbauschexperte;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Suture Jewel;Bleeding Resistance;Grants protection against bleeding;Naht;Blutungswiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Thunder Res Jewel;Thunder Resistance;Increases thunder resistance. Also improves defense at higher levels;Donnerabwehr;Donnerwiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Tip Toe Jewel;Stealth;Makes it easier for monsters to lose sight of you;Schleich;Tarnung;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Water Res Jewel;Water Resistance;Increases water resistance. Also improves defense at higher levels;Wasserabwehr;Wasserwiderstand;3;1;5;3;0.027419355;0.020967742;0.003225806;0;0.020806452;0.008258065;0.002258065
+0;Antidote Jewel;Poison Resistance;Protects against the effects of poison;Gegengift;Giftwiderstand;3;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Antipara Jewel;Paralysis Resistance;Reduces the duration of paralysis;Anti-Lähm;Lähmwiderstand;3;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Crisis Jewel;Resuscitate;Improves Evasion and reduces stamina depletion when afflicted with abnormal status effects;Krisen;Wiederbelebung;1;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Def Lock Jewel;Iron Skin;Grants protection against Defense Down;Abwehrsperre;Eisenhaut;3;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Flight Jewel;Airborne;Increases damage caused by jumping attacks;Flug;Luftherrschaft;1;2;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Fortitude Jewel;Fortify;Increases your attack and defense every time you fall in battle. up to two times;Kraft;Kräftigen;1;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Meowster Jewel;Palico Rally;Powers up palicos;Miauster;Palico-Versammlung;5;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Pep Jewel;Sleep Resistance;Reduces duration of sleep;Pepp;Schlafwiderstand;3;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
+0;Specimen Jewel;Entomologist;Decreases chance of destroying bodies of small insect monsters. allowing them to be carved;Insektenforscher;Entomologe;3;1;5;5;0.045698925;0.034946237;0.005376344;0;0.034677419;0.013763441;0.003763441
