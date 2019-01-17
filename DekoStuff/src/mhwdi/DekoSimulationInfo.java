@@ -10,6 +10,7 @@ public class DekoSimulationInfo {
 	private Dekoration lastMissingDeko;
 	private int lastMissingDekoStart;
 	private int lastMissingDekoMissing;
+	private int excessSmeltingPoints;
 
 	public int getSteps() {
 		return steps;
@@ -52,5 +53,13 @@ public class DekoSimulationInfo {
 	}
 
 	public DekoSimulationInfo() {
+	}
+
+	public int getExcessSmeltingPoints() {
+		return excessSmeltingPoints;
+	}
+
+	public void setExcessSmeltingPoints(int excessSmeltingPoints) {
+		this.excessSmeltingPoints = excessSmeltingPoints;
 	}
 }

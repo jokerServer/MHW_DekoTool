@@ -28,7 +28,7 @@ public class DekoSimulator {
 
 		for (int i = 0; i < RUNS; i++) {
 			DekoSimulation dekoSim = new DekoSimulation(dekoList.clone());
-			simInfo.add(dekoSim.dekoSimInfo);
+			simInfo.add(dekoSim.getDekoSimInfo());
 			Thread worker = new Thread(dekoSim);
 			worker.setName("" + i);
 			executor.execute(worker);
@@ -43,6 +43,7 @@ public class DekoSimulator {
 
 		Map<String, Long> dekoCountMap = simInfo.stream()
 				.collect(Collectors.groupingBy(s -> s.getLastMissingDeko().getDekoName(), Collectors.counting()));
+
 		// Entry<String, Long> maxLast = dekoCountMap.entrySet().stream().max((p1, p2)
 		// -> Long.compare( p1.getValue(),
 		// p2.getValue())).orElseThrow(RuntimeException::new);
@@ -54,10 +55,16 @@ public class DekoSimulator {
 		int lastAvgSteps = simInfo.stream().mapToInt(s -> s.getSteps() - s.getLastMissingDekoStart()).sum();
 		int lastAvgSize = simInfo.stream().mapToInt(s -> s.getLastMissingDekoMissing()).sum();
 		float avgSteps = simInfo.stream().mapToInt(s -> s.getSteps()).sum() / (RUNS * 1f);
+		
+		// more runs => less excess?
+		float avgSmeltingPointExcess = simInfo.stream().mapToInt(s -> s.getExcessSmeltingPoints()).sum() / (RUNS * 1f);
 
 		System.out.println("Simulation of " + RUNS + " runs resulted in " + avgSteps + " T2 Rewards average.");
 		System.out.println("The last deko type required an average of " + lastAvgSteps / (RUNS * 1f)
 				+ " steps to collect the last " + lastAvgSize / (RUNS * 1f) + " missing dekos");
+		System.out.println("There was an average excess of "+avgSmeltingPointExcess+" smelting points.");
+
+		System.out.println("\nLast missing deko averages:");
 		dekoCountSort.stream().forEach(s -> System.out
 				.println(s.getKey() + " in " + s.getValue() + " runs (" + (s.getValue() * 100f) / (RUNS * 1f) + "%)"));
 

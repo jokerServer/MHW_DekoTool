@@ -7,9 +7,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.stream.Collectors;
 
@@ -19,16 +19,15 @@ import java.util.stream.Collectors;
  */
 public class DekoList {
 	private File csvDekoFile;
-	public final static HashMap<Integer, Integer> DEKO_RARITY_SMELTPOINTS = new HashMap<>();
+	public final static Map<Integer, Integer> DEKO_RARITY_SMELTPOINTS = Map.ofEntries(
+	        Map.entry(5, 4),
+	        Map.entry(6, 8),
+	        Map.entry(7, 64),
+	        Map.entry(8, 124)
+	    );
+
 	Boolean useTemporaryCSV = false;
 	ArrayList<Dekoration> dekoList = new ArrayList<>();
-
-	static {
-		DEKO_RARITY_SMELTPOINTS.put(5, 4);
-		DEKO_RARITY_SMELTPOINTS.put(6, 8);
-		DEKO_RARITY_SMELTPOINTS.put(7, 64);
-		DEKO_RARITY_SMELTPOINTS.put(8, 124);
-	}
 
 	public DekoList(String dekoFile, int version) {
 		csvDekoFile = new File("data/" + dekoFile);
@@ -46,7 +45,7 @@ public class DekoList {
 	}
 
 	public final void reloadCSV() {
-
+		throw new UnsupportedOperationException("shits broken yo");
 	}
 
 //    public final void reloadCSV() {
@@ -85,6 +84,7 @@ public class DekoList {
 	public final void reloadCSVv2() {
 		Integer csvLineCount = 1;
 		Boolean german = false;
+
 		try (BufferedReader br = new BufferedReader(new FileReader(csvDekoFile))) {
 			String csvLine;
 			String[] csvColumns;
@@ -93,31 +93,21 @@ public class DekoList {
 				csvColumns = csvLine.split(";");
 				Dekoration csvLineDeko;
 
-				if (german) {
-					csvLineDeko = new Dekoration(/* rownum */csvLineCount, /* owned */ Integer.parseInt(csvColumns[0]),
-							/* tbs */ 0, /* dekoName */ csvColumns[4], /* skill */ csvColumns[5],
-							/* skilldsc */ csvColumns[3], /* skillmax */ Integer.parseInt(csvColumns[6]),
-							/* dekolvl */ Integer.parseInt(csvColumns[7]),
-							/* dekorar */ Integer.parseInt(csvColumns[8]), /* weight */ Integer.parseInt(csvColumns[9]),
-							/* myst% */ Float.parseFloat(csvColumns[10]), /* glow% */ Float.parseFloat(csvColumns[11]),
-							/* worn% */ Float.parseFloat(csvColumns[12]),
-							/* warped% */ Float.parseFloat(csvColumns[13]),
-							/* T1 inv */ Integer.parseInt(csvColumns[14]),
-							/* T2 inv */ Integer.parseInt(csvColumns[15]),
-							/* T3 inv */ Integer.parseInt(csvColumns[16]));
-				} else {
-					csvLineDeko = new Dekoration(/* rownum */csvLineCount, /* owned */ Integer.parseInt(csvColumns[0]),
-							/* tbs */ 0, /* dekoName */ csvColumns[1], /* skill */ csvColumns[2],
-							/* skilldsc */ csvColumns[3], /* skillmax */ Integer.parseInt(csvColumns[6]),
-							/* dekolvl */ Integer.parseInt(csvColumns[7]),
-							/* dekorar */ Integer.parseInt(csvColumns[8]), /* weight */ Integer.parseInt(csvColumns[9]),
-							/* myst% */ Float.parseFloat(csvColumns[10]), /* glow% */ Float.parseFloat(csvColumns[11]),
-							/* worn% */ Float.parseFloat(csvColumns[12]),
-							/* warped% */ Float.parseFloat(csvColumns[13]),
-							/* T1 inv */ Float.parseFloat(csvColumns[14]),
-							/* T2 inv */ Float.parseFloat(csvColumns[15]),
-							/* T3 inv */ Float.parseFloat(csvColumns[16]));
-				}
+				csvLineDeko = new Dekoration(/* rownum */csvLineCount, /* owned */ Integer.parseInt(csvColumns[0]),
+						/* tbs */ 0, /* dekoName */ csvColumns[1], /* skill */ csvColumns[2],
+						/* skilldsc */ csvColumns[3], /* skillmax */ Integer.parseInt(csvColumns[6]),
+						/* dekolvl */ Integer.parseInt(csvColumns[7]), /* dekorar */ Integer.parseInt(csvColumns[8]),
+						/* weight */ Integer.parseInt(csvColumns[9]), /* myst% */ Float.parseFloat(csvColumns[10]),
+						/* glow% */ Float.parseFloat(csvColumns[11]), /* worn% */ Float.parseFloat(csvColumns[12]),
+						/* warped% */ Float.parseFloat(csvColumns[13]), /* T1 inv */ Float.parseFloat(csvColumns[14]),
+						/* T2 inv */ Float.parseFloat(csvColumns[15]), /* T3 inv */ Float.parseFloat(csvColumns[16]));
+
+				//if (german) {
+				//	/* dekoName */ csvColumns[4]
+				//	/* skill */ csvColumns[5]
+				//	/* skilldsc */ csvColumns[3]
+				//}
+
 				dekoList.add(csvLineDeko);
 			}
 		} catch (FileNotFoundException e) {
@@ -209,6 +199,12 @@ public class DekoList {
 		return result[0];
 	}
 
+	/*
+	 * @param Double between 0 and 1
+	 *
+	 * @return the first Dekoration that has a aggregated chance of sumChance or
+	 * higher
+	 */
 	public Dekoration getDekoByT2SumChance(Double sumChance) {
 		double aggregate = 0;
 		for (Dekoration d : dekoList) {
@@ -221,6 +217,7 @@ public class DekoList {
 		return null;
 	}
 
+	@Deprecated
 	public void writeCSV(String path) {
 		// writeCsvFile(csvDekoFile.getAbsolutePath());
 		File csvSaveFile = new File(path);
@@ -234,6 +231,7 @@ public class DekoList {
 		}
 	}
 
+	@Deprecated
 	public void updateCSVFile() {
 		List<String> lines = new LinkedList<>();
 		try (BufferedReader br = new BufferedReader(new FileReader(csvDekoFile))) {
@@ -242,36 +240,16 @@ public class DekoList {
 				lines.add(d.printCSVData());
 			}
 			System.out.println(csvDekoFile.getAbsolutePath());
-			// Files.write(csvSaveFile.toPath(), sb);
+
 			Files.write(csvDekoFile.toPath(), lines);
 		} catch (Throwable e) {
 			throw new RuntimeException(e);
 		}
 	}
 
-	private void updateTmpCSV() {
-		if (this.useTemporaryCSV) {
-			writeCSV("data/" + csvDekoFile.getName() + "_bak");
-		} else {
-			System.out.println("not in tmp mode");
-		}
-	}
 
 	public Dekoration[] getIncompleteDekoList() {
 		return dekoList.stream().filter(s -> s.getOwned() < s.getSkillMaxLvl()).toArray(Dekoration[]::new);
-	}
-
-	private void loadTmpCSV() {
-		if (this.useTemporaryCSV) {
-			File tmpFile = new File("data/" + csvDekoFile.getName() + "_bak");
-			File orgFile = this.csvDekoFile;
-			this.csvDekoFile = tmpFile;
-			reloadCSV();
-			this.csvDekoFile = orgFile;
-			System.out.println("load of tmp successful, use update to save");
-		} else {
-			System.out.println("not in tmp mode");
-		}
 	}
 
 	public void resetOwned() {
