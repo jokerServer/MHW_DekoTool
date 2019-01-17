@@ -2,6 +2,7 @@ package mhwdi;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ExecutorService;
@@ -13,10 +14,11 @@ import java.util.stream.Collectors;
  * @author mhe
  */
 public class DekoSimulator {
+	final static int RUNS = 100000;
+	final static int THREADCOUNT = 2;
 
 	public static void main(String[] args) {
-		final int RUNS = 10000;
-		final int THREADCOUNT = 8;
+		Date start = new Date();
 		ExecutorService executor = Executors.newFixedThreadPool(THREADCOUNT);
 
 		String csvFilename = "myDekoCsv3.csv";
@@ -31,12 +33,12 @@ public class DekoSimulator {
 			worker.setName("" + i);
 			executor.execute(worker);
 		}
-		System.out.println("init done");
+		System.out.println("init done with a runtime of "+((System.currentTimeMillis()-start.getTime())/1000f)+"s");
 
 		executor.shutdown();
 		while (!executor.isTerminated()) {
 		}
-		System.out.println("Finished all threads");
+		System.out.println("Finished all threads with a runtime of "+((System.currentTimeMillis()-start.getTime())/1000f)+"s");
 		System.out.println();
 
 		Map<String, Long> dekoCountMap = simInfo.stream()
@@ -58,5 +60,8 @@ public class DekoSimulator {
 				+ " steps to collect the last " + lastAvgSize / (RUNS * 1f) + " missing dekos");
 		dekoCountSort.stream().forEach(s -> System.out
 				.println(s.getKey() + " in " + s.getValue() + " runs (" + (s.getValue() * 100f) / (RUNS * 1f) + "%)"));
+
+		System.out.println("\n - Terminated with a runtime of "+((System.currentTimeMillis()-start.getTime())/1000f)+"s"
+				+" and a time of "+((System.currentTimeMillis()-start.getTime())/(RUNS*1f))+"ms per Sim");
 	}
 }

@@ -11,7 +11,7 @@ Owned;Jewel Name;Skill;Skill Description;Juwel;Fähigkeit;Max;Level;Rarity;Weigh
 0;Mighty Bow Jewel;Bow Charge Plus;Increases max bow charge level by 1;Mächtiger-Bogen;Sehnenkraftä;1;2;8;3;0;0;0.002727273;0.006818182;0.00075;0.002727273;0.002795455
 0;Spread Jewel;Spread/Power Shots;Increases the attack power of spread ammo and power shot arrows;Schrot;;1;3;8;3;0;0;0.002727273;0.006818182;0.00075;0.002727273;0.002795455
 0;Critical Jewel;Critical Boost;Increases the damage of critical hits;Kritisches;Kritischer Boost;3;2;8;5;0;0;0.004545455;0.011363636;0.00125;0.004545455;0.004659091
-0;Attack Jewel;Attack Boost;Increases attack power and improves affinity at higher levels;Angriff;Angriffsboost;7;1;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
+1;Attack Jewel;Attack Boost;Increases attack power and improves affinity at higher levels;Angriff;Angriffsboost;7;1;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
 0;Challenger Jewel;Agitator;Increases attack power and affinity when large monsters become enraged;;;5;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
 0;Forceshot Jewel;Normal Shots;Increases the attack power of normal ammo and normal arrows;;;1;3;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
 0;Furor Jewel;Resentment;Increases attack when you have recoverable damage;;;5;2;7;1;0;0.000166667;0.001;0.003;0.000341667;0.001186667;0.00109
